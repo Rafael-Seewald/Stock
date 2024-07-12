@@ -1,0 +1,7 @@
+<ul>
+    <li>NOME: {{produto.nome}}</li>
+    <li>DESCRIÇÃO: {{produto.descricao}}</li>
+    <li>VALOR: R${{ '%.2f' % produto.valor}}</li>
+    <li>DISPONÍVEL PARA VENDA: {% if produto.disp %}Sim{% else %}Não{% endif %}</li>
+    <button class="btn-primary"><a href="" ">Fechar</a></button>
+</ul>

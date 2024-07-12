@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Noto+Sans+Malayalam:wght@100..900&display=swap');
+
+body{
+    background-color: rgb(206, 204, 206);
+    color: rgb(23, 36, 36);
+    font-family: "Work Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+table{
+    font-size: 19px;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 13px 430px;
+}
+
+th{
+    background-color: #689285;
+    border: 2px solid rgb(41, 41, 41);
+    padding: 10px;
+    text-align: center;
+}
+
+td{
+    background-color: #a9cfc3;
+    border: 1px solid black;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+ul{
+    padding: 1px;
+}
+
+div{
+    padding: 2px 30px;
+}
+
+button{
+    border-radius: 9px;
+    background-color: rgb(23, 165, 94);
+    color: rgb(255, 255, 255);
+    border-color: rgb(15, 94, 45);
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    padding: 3px 10px;
+    margin: 6px 2px;
+    font-weight: 690;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+li{
+    padding: 5px 2px;
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+input{
+    font-size: 15px;
+    border-radius: 4px;
+    border-width: 2px;
+    border: #404141;
+    color: #404141;
+    padding: 2px 14px;
+    padding-top: 5px;
+    margin: 8px 12px;
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-weight: 700;
+}
+
+#fancy-td{
+    padding: 5px 1px;
+}
+
+#ancora{
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border-color: black;
+    font-size: 21px;
+    margin: 17px 23px;
+}
+
+.modal-title{
+    padding: 1px;
+}
+
+.nav{
+    background-color: rgb(247, 247, 247);
+    color: rgb(32, 32, 32);
+    border-color: black;
+    font-size: 21px;
+    margin: 17px 23px;
+}
+
+.button-list{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    font-size: 15px;
+    margin: 15px 145px;
+    padding: 4px 13px;
+    cursor: pointer;
+}
+
+.button-list:hover {
+    background-color: rgb(51, 196, 95); 
+    transition: 300ms;
+}
+
+.btn-primary:hover {
+    background-color: rgb(51, 196, 95); 
+    transition: 300ms;
+}
+
+.mb-3{
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.form-control{
+    font-size: 14px;
+    text-align: left;
+    font-weight: 550;
+}

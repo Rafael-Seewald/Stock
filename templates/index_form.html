@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OAK Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/app.css') }}">
+</head>
+  
+<body>
+    <button class="nav"><a id="ancora" href="{{ url_for('listagem') }}">LISTAGEM</a></button>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label" for="nome" name="nome">Nome do produto:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label" for="nome" name="descricao">Descrição:</label>
+            <input type="text" class="form-control" id="descricao" name="descricao">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="nome" name="valor">Valor: R$</label>
+            <input type="number" class="form-control" id="valor" name="valor" step="0.01" required>
+        </div>
+
+        <div class="mb-3">
+            <label id="disponivel">Disponível para venda:</label>
+            <input type="radio" class="form-check-input" name="disp" value="Sim" id="sim">
+            <label class="form-check-label" for="sim">Sim</label>
+            <input type="radio" class="form-check-input" name="disp" value="Não" id="nao" checked>
+            <label class="form-check-label" for="nao">Não</label>
+        </div>
+        <button type="submit" class="btn-primary">Cadastrar</button>
+    </form>
+    
+</body>
+</html>

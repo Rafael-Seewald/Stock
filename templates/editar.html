@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OAK Edição</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/app.css') }}">
+</head>
+
+<body>
+    <button class="nav"><a class="nav" href="{{ url_for('listagem') }}">LISTAGEM</a></button>
+
+    <form method="post">
+        
+        <div class="mb-3">
+            <label for="nome">Nome do produto:</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="{{ produto.nome }}" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="descricao">Descrição:</label>
+            <input type="text" class="form-control" id="descricao" name="descricao" value="{{ produto.descricao }}">
+        </div>
+
+        <div class="mb-3">
+            <label for="valor">Valor: R$</label>
+            <input type="number" class="form-control" step="0.01" id="valor" name="valor" value="{{ produto.valor }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label id="disponivel_edit">Disponível para venda:</label>
+            <input type="radio" name="disp" value="Sim" id="sim" {% if produto.disp %}checked{% endif %} required>
+            <label for="sim">Sim</label>
+            <input type="radio" name="disp" value="Não" id="nao" {% if not produto.disp %}checked{% endif %}>
+            <label for="nao">Não</label>
+        </div>
+        <button type="submit" class="btn-primary">Salvar Alterações</button>
+    </form>
+
+</body>
+</html>

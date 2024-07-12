@@ -1,0 +1,16 @@
+{% for produto in produtos %}
+<tr>
+    <td>{{produto.nome}}</td>
+    <td>R$ {{ '%.2f' % produto.valor}}</td>
+    <td id="fancy-td">
+        <button class="button-list" c-get="{{ url_for('detalhe', produto_id=produto.id) }}"
+            c-target="#exibir_produto">Ver</button>
+
+        <button class="button-list">
+            <a href="{{ url_for('editar', produto_id=produto.id) }}">Editar</a></button>
+
+        <button class="button-list" c-remove-closest="tr"
+            c-delete="{{ url_for('deletar', produto_id=produto.id) }}">Remover</button>
+    </td>  
+</tr>
+{% endfor %}
