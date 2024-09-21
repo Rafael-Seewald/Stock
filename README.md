@@ -10,7 +10,7 @@ The website has the functions to add products, remove, edit products and a butto
 A basic design.
 
 <h1 align="center">
-<img src="./gif.gif" width="940" height="530"></img>
+<img src="./gif.gif" width="1140" height="530"></img>
 </h1>
 
 <h2>It has 6 columns for each product: Id, Name, Description, Value, Available and Added moment.</h2>
