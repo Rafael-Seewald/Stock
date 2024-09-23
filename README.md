@@ -10,7 +10,7 @@ The website has the functions to add products, remove, edit products and a butto
 A basic design.
 
 <h1 align="center">
-<img src="./gif.gif" width="840" height="330"></img>
+<img src="./gif.gif" width="640" height="330"></img>
 </h1>
 
 <h2>It has 6 columns for each product: Id, Name, Description, Value, Available and Added moment.</h2>
@@ -24,9 +24,9 @@ A basic design.
 <li>Added moment - it records the moment you registered that item (yyyy/mm/dd/ - hour/minute/seconds).</li>
 
 <hr>
-
 <h2>There is a env file in the .gitignore that contains the URL connection string and environment variables for my app.
 So I won't expose the database to everyone in my GitHub.</h2>
+<hr>
 
 <div align="center">
   <footer>
